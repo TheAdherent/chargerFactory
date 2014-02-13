@@ -4,12 +4,16 @@ module.exports = function chargerFactory(description, amount, chargeMethod){
 	} else if chargeMethod.type == 'Stripe'{
 		//pass info on to the Stripe function
 	} else if chargeMethod.type == 'test' {
-		//pass info on to the test charge function
+		return payment-method-test(description)
 	} else {
 		return false
 	}
 }
 
-var payment-method-test = function(){
+var payment-method-test = function(description){
+	if description == 'test' {
+		string = (Math.random() * 100000).toFixed()
+		return false, true, string
+	}
 
 }
